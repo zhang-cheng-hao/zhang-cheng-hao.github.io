@@ -19,20 +19,23 @@ github: zhang-cheng-hao
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a master's student in Software Engineering at the School of Software,
-    Tsinghua University, expected to graduate in 2027. I received my B.Eng. in
-    Software Engineering from Tsinghua University.
+    I am a master's student in Software Engineering at Tsinghua University,
+    expected to graduate in 2027. I also received my B.Eng. in Software
+    Engineering from Tsinghua University.
   </p>
   <p>
-    I study LLM-supervised retrieval learning: how language and vision-language
-    models can teach retrievers from the evidence they read and use, moving
-    beyond explicit relevance labels and short-passage matching. My current work
-    focuses on reading policies, evidence exposure, retrieval-label-free
-    multimodal retrieval, and LLM-enhanced recommendation.
+    My interests center on LLM-driven representation learning: how to use the
+    semantic understanding and world knowledge of LLMs/VLMs to learn
+    transferable, compressible user/item embeddings for retrieval and
+    recommendation.
   </p>
   <p>
-    I am seeking research internship opportunities in LLM algorithms and will
-    graduate in 2027.
+    I am particularly interested in representation alignment under weak or
+    implicit supervision, and in jointly training embeddings with contrastive
+    objectives and SFT/generative objectives so that they retain semantic
+    knowledge while absorbing collaborative signals from retrieval and
+    recommendation. My earlier work also studies disentangled representation
+    learning and cross-domain generalization for graph and molecular tasks.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg

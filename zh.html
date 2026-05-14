@@ -18,18 +18,15 @@ permalink: /zh/
                         <h4 class="mb-3">张程皓</h4>
                         <p>
                             我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业，本科同样就读于清华大学软件学院。
-                            目前在快手基础大模型与应用部做大模型算法实习，主要负责面向短视频推荐的 LLM item embedding
-                            与对齐训练链路。
                         </p>
                         <p>
-                            我的工作围绕 <strong>表征学习、检索学习与 LLM-enhanced recommendation</strong> 展开：
-                            一方面研究语言模型和视觉语言模型如何通过可见证据、reading policy 与 evidence exposure
-                            监督 dense retriever；另一方面将大模型语义能力用于推荐场景中的多类型 item 表征和长期兴趣建模。
+                            我的兴趣集中在<strong>大模型驱动的 representation learning</strong>：
+                            如何利用 LLM/VLM 的语义理解与世界知识，学习可迁移、可压缩、可用于检索与推荐的 user/item embeddings。
                         </p>
                         <p class="mb-0">
-                            目前已有 AAAI 2026、AAAI 2024 与 Frontiers of Computer Science 论文经历；
-                            曾获清华大学优秀学生干部、综合优秀奖学金、科技创新奖学金与清华大学“挑战杯”三等奖。
-                            正在关注大模型算法与推荐算法方向的 2027 届机会。
+                            我关注弱监督/无显式标注场景下的表征对齐，以及对比学习与 SFT/生成式目标的联合训练，
+                            使 embedding 同时保留语义知识并吸收推荐/检索中的协同信号。
+                            早期工作也涉及图与分子任务中的解纠缠表征学习和跨域泛化。
                         </p>
                     </div>
                 </div>
@@ -97,25 +94,25 @@ permalink: /zh/
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <h6>LLM-Supervised Retrieval</h6>
-                                <p class="small mb-0 text-muted">研究语言模型可见上下文、reading policy 和 evidence exposure 如何影响 dense retriever 学到的表示。</p>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <h6>无检索标签的多模态学习</h6>
-                                <p class="small mb-0 text-muted">用问答任务效用监督图像、文本、表格和混合模态证据源上的 multimodal retriever。</p>
-                            </div>
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <h6>LLM for Recommendation</h6>
-                                <p class="small mb-0 text-muted">LLM-enhanced recommendation、用户建模、检索增强排序和推荐系统评测。</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>评测与机器学习工程</h6>
-                                <p class="small mb-0 text-muted">PyTorch、PyG、Transformers、vLLM、基线复现、消融实验和稳定训练管线。</p>
-                            </div>
-                        </div>
+	                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
+	                        <div class="row">
+	                            <div class="col-md-6 mb-3">
+	                                <h6>LLM/VLM Embeddings</h6>
+	                                <p class="small mb-0 text-muted">学习可迁移、可压缩的 user/item embeddings，使大模型语义知识能进入检索、推荐和用户理解任务。</p>
+	                            </div>
+	                            <div class="col-md-6 mb-3">
+	                                <h6>弱监督表征对齐</h6>
+	                                <p class="small mb-0 text-muted">在缺少显式 relevance labels 的场景下，利用 LLM/VLM 证据阅读、问答效用和行为派生信号监督 embedding 学习。</p>
+	                            </div>
+	                            <div class="col-md-6 mb-3 mb-md-0">
+	                                <h6>语义与协同信号融合</h6>
+	                                <p class="small mb-0 text-muted">通过对比学习与 SFT/生成式目标联合训练，使 embedding 既保留世界知识，也贴近推荐/检索中的协同分布。</p>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <h6>解纠缠与跨域泛化</h6>
+	                                <p class="small mb-0 text-muted">研究图、分子和多域任务中的因素级解纠缠表示、跨域迁移和长尾/冷启动泛化能力。</p>
+	                            </div>
+	                        </div>
                     </div>
                 </div>
             </div>
