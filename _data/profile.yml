@@ -24,14 +24,15 @@ short_bio: >-
     Software Engineering from Tsinghua University.
   </p>
   <p>
-    My research interests include graph machine learning, LLM safety,
-    recommendation and retrieval systems, and evaluation-centered machine
-    learning engineering. I am particularly interested in cross-domain
-    few-shot graph learning, evidence-grounded question answering, and
-    reproducible evaluation protocols for real systems.
+    I study LLM-supervised retrieval learning: how language and vision-language
+    models can teach retrievers from the evidence they read and use, moving
+    beyond explicit relevance labels and short-passage matching. My current work
+    focuses on reading policies, evidence exposure, retrieval-label-free
+    multimodal retrieval, and LLM-enhanced recommendation.
   </p>
   <p>
-    I am open to 2026 research / algorithm internships and full-time roles.
+    I am open to LLM algorithm internships, talent programs, and 2026 full-time
+    algorithm roles.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg

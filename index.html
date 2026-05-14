@@ -17,25 +17,39 @@ lang: en
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-microscope"></i> Research Interests</h5>
+                        <h5 class="mb-3"><i class="fas fa-microscope"></i> Research Focus</h5>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <h6>Graph Representation Learning</h6>
-                                <p class="small mb-0 text-muted">Cross-domain few-shot graph learning, graph-level anomaly detection, molecular property prediction, and disentangled representation learning.</p>
+                                <h6>LLM-Supervised Retrieval</h6>
+                                <p class="small mb-0 text-muted">How reading policies, visible context, and evidence exposure shape the representations learned by dense retrievers.</p>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6>Trustworthy LLM Systems</h6>
-                                <p class="small mb-0 text-muted">Evidence-grounded QA, security log reasoning, attack-chain reconstruction, and auditable context compression.</p>
+                                <h6>Retrieval-Label-Free Multimodal Learning</h6>
+                                <p class="small mb-0 text-muted">Training multimodal retrievers from answer utility over image, text, table, and mixed-modality evidence sources.</p>
                             </div>
                             <div class="col-md-6 mb-3 mb-md-0">
-                                <h6>Retrieval and Recommendation</h6>
-                                <p class="small mb-0 text-muted">Multimodal sequential recommendation, vector retrieval alignment, and evaluation protocols for retrieval-augmented systems.</p>
+                                <h6>LLM for Recommendation</h6>
+                                <p class="small mb-0 text-muted">LLM-enhanced recommendation, user modeling, multimodal sequential recommendation, and vector-retrieval score alignment.</p>
                             </div>
                             <div class="col-md-6">
-                                <h6>Evaluation and Reproducibility</h6>
-                                <p class="small mb-0 text-muted">PyTorch, PyG, Transformers, vLLM, baselines, ablations, and stable training / inference pipelines.</p>
+                                <h6>Evaluation and ML Engineering</h6>
+                                <p class="small mb-0 text-muted">PyTorch, PyG, Transformers, vLLM, reproducible baselines, ablations, and stable training / inference pipelines.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-scroll"></i> Featured Manuscripts</h5>
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>What the Language Model Reads Shapes What the Retriever Learns.</strong> Studies how LM-visible context, reading policy, and evidence exposure affect dense retriever learning.</li>
+                            <li><strong>QRoute.</strong> Retrieval-label-free multimodal dense retrieval via QA-supervised cache routing over heterogeneous evidence sources.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -72,7 +86,7 @@ lang: en
         {%
         include widgets/publication_card.html
         publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
+        title='<i class="fas fa-star"></i> Selected Publications & Manuscripts'
         %}
         {% endif %}
     </div>

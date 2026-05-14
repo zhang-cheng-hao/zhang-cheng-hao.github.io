@@ -20,11 +20,12 @@ permalink: /zh/
                             我是清华大学软件学院软件工程硕士研究生，导师为赵曦滨老师。本科毕业于清华大学软件学院。
                         </p>
                         <p>
-                            我的研究兴趣包括图机器学习、大模型安全、推荐与检索系统，以及以评测为中心的机器学习工程。
-                            近期工作覆盖跨域 few-shot 图学习、证据绑定网络安全问答、多模态序列推荐和端到端向量检索对齐。
+                            我的研究主线是 LLM-supervised retrieval learning：研究语言模型和视觉语言模型如何通过它们读取、
+                            使用的证据来监督检索器学习，而不只依赖显式 relevance labels 或短 passage matching。
+                            近期工作关注 reading policy、evidence exposure、无检索标签的多模态检索学习，以及 LLM-enhanced recommendation。
                         </p>
                         <p class="mb-0">
-                            目前开放交流 2026 年科研算法实习与秋招全职机会。
+                            目前开放交流大模型算法实习、人才计划与 2026 年秋招全职机会。
                         </p>
                     </div>
                 </div>
@@ -35,22 +36,22 @@ permalink: /zh/
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究兴趣</h5>
+                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <h6>图表征学习</h6>
-                                <p class="small mb-0 text-muted">跨域 few-shot 图学习、图级异常检测、分子性质预测与解耦表征学习。</p>
+                                <h6>LLM-Supervised Retrieval</h6>
+                                <p class="small mb-0 text-muted">研究语言模型可见上下文、reading policy 和 evidence exposure 如何影响 dense retriever 学到的表示。</p>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6>可信大模型系统</h6>
-                                <p class="small mb-0 text-muted">证据绑定问答、安全日志推理、攻击链复盘与可审计上下文压缩。</p>
+                                <h6>无检索标签的多模态学习</h6>
+                                <p class="small mb-0 text-muted">用问答任务效用监督图像、文本、表格和混合模态证据源上的 multimodal retriever。</p>
                             </div>
                             <div class="col-md-6 mb-3 mb-md-0">
-                                <h6>推荐与检索</h6>
-                                <p class="small mb-0 text-muted">多模态序列推荐、向量检索对齐和面向真实系统的评测协议。</p>
+                                <h6>LLM for Recommendation</h6>
+                                <p class="small mb-0 text-muted">LLM-enhanced recommendation、用户建模、多模态序列推荐和向量检索打分对齐。</p>
                             </div>
                             <div class="col-md-6">
-                                <h6>评测与可复现性</h6>
+                                <h6>评测与机器学习工程</h6>
                                 <p class="small mb-0 text-muted">PyTorch、PyG、Transformers、vLLM、基线复现、消融实验和稳定训练管线。</p>
                             </div>
                         </div>
@@ -63,7 +64,21 @@ permalink: /zh/
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-scroll"></i> 代表论文</h5>
+                        <h5 class="mb-3"><i class="fas fa-scroll"></i> 重点手稿</h5>
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>What the Language Model Reads Shapes What the Retriever Learns.</strong> 研究 LM 可见上下文、reading policy 与 evidence exposure 如何改变 retriever 学到的表示。</li>
+                            <li><strong>QRoute.</strong> 通过 QA-supervised cache routing 在异构证据源上学习 retrieval-label-free multimodal dense retrieval。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-book"></i> 已发表论文</h5>
                         <ul class="mb-0">
                             <li class="mb-2"><strong>DGPA for Few-Shot Unsupervised Domain Adaptation in Graph-Level Anomaly Detection.</strong> AAAI 2026.</li>
                             <li class="mb-2"><strong>Factor-wise Disentangled Contrastive Learning for Cross-domain Few-shot Molecular Property Prediction.</strong> Frontiers of Computer Science, 2025.</li>
