@@ -1,5 +1,5 @@
 ---
 title: >-
-  Open to LLM algorithm internships, talent programs, and 2027 full-time algorithm roles.
+  Seeking research internship opportunities in LLM algorithms and graduating in 2027.
 date: 2025-12-01 00:01:00 +0800
 ---
