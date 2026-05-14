@@ -57,23 +57,31 @@ permalink: /zh/
                         <h5 class="mb-3"><i class="fas fa-briefcase"></i> 实习经历</h5>
                         <div class="mb-3">
                             <div class="d-flex flex-wrap align-items-baseline">
-                                <h6 class="mb-1">推荐系统算法实习：LLM 常识对齐的 Item 表征</h6>
-                                <span class="small text-muted ml-md-auto">推荐召回 / Item Representation / LLM Alignment / 优秀 LR</span>
+                                <h6 class="mb-1">快手｜基础大模型与应用部｜大模型算法实习</h6>
+                                <span class="small text-muted ml-md-auto">2025.12 - 2026.05</span>
                             </div>
                             <p class="small text-muted mb-2">
-                                现有推荐系统中的物品表征对齐主要依赖推荐/搜索域共现信号与多模态信号。前者擅长捕捉高热行为关系，
-                                例如牙膏与牙刷的高频同购，但长尾覆盖不足且易受行为噪声干扰；后者能够识别图文相似商品，
-                                但容易把牙膏与药膏这类外观相似但使用场景不同的商品拉近。二者共同缺口是缺少与真实世界常识的语义对齐。
+                                方向：面向短视频推荐的多类型 item 表征学习，覆盖商品、短视频、直播间等业务对象。
                             </p>
-                            <p class="small text-muted mb-2">
-                                我们没有直接把 LLM item embedding 作为精排特征，而是让 LLM 判别用户历史序列中的 item 相关性，
-                                构造对比学习样本，将 LLM 表征对齐到推荐域分布；随后在 SIM GSU 中使用 LLM embedding 进行
-                                soft search，挖掘与目标商品语义相关、但未被共现关系覆盖的用户长期兴趣序列。
-                            </p>
-                            <p class="small mb-0">
-                                <strong>结果：</strong>离线训练 AUC 提升 <strong>0.45pp</strong>，内循环大盘总全局后验预期花费提升
-                                <strong>1.883%</strong>。
-                            </p>
+                            <ul class="small text-muted mb-2 pl-3">
+                                <li class="mb-1">
+                                    <strong>个人负责：</strong>在 Qwen2.5-Omni-3B / CREM 基础上改造共享 item encoder，
+                                    按业务对象接入不同任务头；负责 LLM item embedding 的数据拉取、训练/推理代码、
+                                    embedding 推理服务镜像构建与上线。
+                                </li>
+                                <li class="mb-1">
+                                    <strong>训练目标：</strong>用 LLM 判别用户历史序列中的 item 相关性，构造千万级相关 pair；
+                                    使用 InfoNCE 将 LLM 表征对齐到推荐域分布，并结合百万级 QA 的 cross entropy 监督保留语义理解能力。
+                                </li>
+                                <li class="mb-1">
+                                    <strong>协作边界：</strong>我负责 LLM embedding 与对齐训练链路；下游 SIM GSU / 推荐主链路的特征接入、
+                                    流量策略和最终发布由推荐链路团队协作完成。
+                                </li>
+                                <li>
+                                    <strong>实验结果：</strong>在该 LLM item embedding 特征接入后的实验中，离线 AUC 提升
+                                    <strong>0.45pp</strong>，核心业务指标提升 <strong>1.88%</strong>。
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
