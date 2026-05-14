@@ -32,47 +32,23 @@ permalink: /zh/
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col">
-                <div class="card border-0 shadow-sm bg-white">
-                    <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <h6>LLM-Supervised Retrieval</h6>
-                                <p class="small mb-0 text-muted">研究语言模型可见上下文、reading policy 和 evidence exposure 如何影响 dense retriever 学到的表示。</p>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <h6>无检索标签的多模态学习</h6>
-                                <p class="small mb-0 text-muted">用问答任务效用监督图像、文本、表格和混合模态证据源上的 multimodal retriever。</p>
-                            </div>
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <h6>LLM for Recommendation</h6>
-                                <p class="small mb-0 text-muted">LLM-enhanced recommendation、用户建模、检索增强排序和推荐系统评测。</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>评测与机器学习工程</h6>
-                                <p class="small mb-0 text-muted">PyTorch、PyG、Transformers、vLLM、基线复现、消融实验和稳定训练管线。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include widgets/experience_card.html %}
 
-        <div class="row mt-3">
-            <div class="col">
-                <div class="card border-0 shadow-sm bg-white">
-                    <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-scroll"></i> 在投与进行中工作</h5>
-                        <ul class="mb-0">
-                            <li class="mb-2"><strong>What the Language Model Reads Shapes What the Retriever Learns.</strong> 研究 LM 可见上下文、reading policy 与 evidence exposure 如何改变 retriever 学到的表示。</li>
-                            <li><strong>UBioRec.</strong> 面向多场景用户理解与推荐的统一 LLM 框架，用结构化 User Biography 统一用户建模，并通过 adaptive token 提升服务效率。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> 论文与手稿'
+        %}
+        {% endif %}
 
         <div class="row mt-3">
             <div class="col">
@@ -108,17 +84,28 @@ permalink: /zh/
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-book"></i> 已发表论文</h5>
-                        <ul class="mb-0">
-                            <li class="mb-2"><strong>DGPA for Few-Shot Unsupervised Domain Adaptation in Graph-Level Anomaly Detection.</strong> AAAI 2026.</li>
-                            <li class="mb-2"><strong>Factor-wise Disentangled Contrastive Learning for Cross-domain Few-shot Molecular Property Prediction.</strong> Frontiers of Computer Science, 2025.</li>
-                            <li><strong>Geometry-Guided Domain Generalization for Monocular 3D Object Detection.</strong> AAAI 2024.</li>
-                        </ul>
+                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h6>LLM-Supervised Retrieval</h6>
+                                <p class="small mb-0 text-muted">研究语言模型可见上下文、reading policy 和 evidence exposure 如何影响 dense retriever 学到的表示。</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h6>无检索标签的多模态学习</h6>
+                                <p class="small mb-0 text-muted">用问答任务效用监督图像、文本、表格和混合模态证据源上的 multimodal retriever。</p>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <h6>LLM for Recommendation</h6>
+                                <p class="small mb-0 text-muted">LLM-enhanced recommendation、用户建模、检索增强排序和推荐系统评测。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>评测与机器学习工程</h6>
+                                <p class="small mb-0 text-muted">PyTorch、PyG、Transformers、vLLM、基线复现、消融实验和稳定训练管线。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        {% include widgets/experience_card.html %}
     </div>
 </div>

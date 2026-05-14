@@ -48,7 +48,7 @@ education:
 - name: Tsinghua University
   logo: /assets/images/badges/THU.png
   dept: School of Software
-  position: B.Eng. in Software Engineering, GPA 3.857 / 4.0, Rank 13 / 93
+  position: B.Eng. in Software Engineering
   date: Sep. 2020 - Jun. 2024
 
 education_zh:
@@ -60,7 +60,7 @@ education_zh:
 - name: 清华大学
   logo: /assets/images/badges/THU.png
   dept: 软件学院
-  position: 软件工程学士，GPA 3.857 / 4.0，排名 13 / 93
+  position: 软件工程学士
   date: 2020年9月 - 2024年6月
 
 experience:

@@ -13,6 +13,26 @@ lang: en
 
         {% include widgets/profile_card_bio_only.html %}
 
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications & Manuscripts'
+        %}
+        {% endif %}
+
         <div class="row mt-3">
             <div class="col">
                 <div class="card border-0 shadow-sm bg-white">
@@ -40,39 +60,5 @@ lang: en
                 </div>
             </div>
         </div>
-
-        <div class="row mt-3">
-            <div class="col">
-                <div class="card border-0 shadow-sm bg-white">
-                    <div class="card-body p-4">
-                        <h5 class="mb-3"><i class="fas fa-scroll"></i> Featured Manuscripts</h5>
-                        <ul class="mb-0">
-                            <li class="mb-2"><strong>What the Language Model Reads Shapes What the Retriever Learns.</strong> Studies how LM-visible context, reading policy, and evidence exposure affect dense retriever learning.</li>
-                            <li><strong>UBioRec.</strong> A unified LLM framework for multi-scenario user understanding and recommendation with structured User Biographies and efficient adaptive-token serving.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications & Manuscripts'
-        %}
-        {% endif %}
     </div>
 </div>
