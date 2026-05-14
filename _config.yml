@@ -1,0 +1,15 @@
+# GitHub Pages / Jekyll settings
+baseurl: ""
+url: "https://zhang-cheng-hao.github.io"
+
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+timezone: Asia/Shanghai
+
+collections:
+  publications:
+    output: false
+  news:
+    output: false

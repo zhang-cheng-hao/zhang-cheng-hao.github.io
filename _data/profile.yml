@@ -1,0 +1,64 @@
+primary_name: "Chenghao Zhang"
+secondary_name: "张程皓"
+navbar_name: "Chenghao Zhang"
+
+positions:
+- name: M.S. Student, School of Software
+- name: Tsinghua University
+  logo: /assets/images/badges/THU.png
+
+email: "chenghao24@mails.tsinghua.edu.cn"
+github: zhang-cheng-hao
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a master's student in Software Engineering at the School of Software,
+    Tsinghua University, advised by Prof. Xibin Zhao. I received my B.Eng. in
+    Software Engineering from Tsinghua University.
+  </p>
+  <p>
+    My research interests include graph machine learning, LLM safety,
+    recommendation and retrieval systems, and evaluation-centered machine
+    learning engineering. I am particularly interested in cross-domain
+    few-shot graph learning, evidence-grounded question answering, and
+    reproducible evaluation protocols for real systems.
+  </p>
+  <p>
+    I am open to 2026 research / algorithm internships and full-time roles.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Chenghao Zhang
+
+education:
+- name: Tsinghua University
+  logo: /assets/images/badges/THU.png
+  dept: School of Software
+  position: M.S. in Software Engineering
+  date: Aug. 2024 - present
+- name: Tsinghua University
+  logo: /assets/images/badges/THU.png
+  dept: School of Software
+  position: B.Eng. in Software Engineering, GPA 3.857 / 4.0, Rank 13 / 93
+  date: Sep. 2020 - Jun. 2024
+
+experience:
+- name: Tsinghua University
+  logo: /assets/images/badges/THU.png
+  dept: Graduate Student Association
+  position: Lead, Information Service Center
+  date: 2024 - 2025
+
+awards:
+- name: Tsinghua Outstanding Student Cadre
+  date: 2025
+- name: Comprehensive Excellence Scholarship
+  date: 2024-2025
+- name: Technology Innovation Scholarship
+  date: 2023
+- name: Academic Excellence Scholarship
+  date: 2021-2022
+- name: Tsinghua Challenge Cup, Third Prize
+  date: 2023

@@ -1,0 +1,78 @@
+---
+layout: default
+title : Homepage
+navbar_title: Home
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+
+        {% include widgets/profile_card_bio_only.html %}
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-microscope"></i> Research Interests</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h6>Graph Representation Learning</h6>
+                                <p class="small mb-0 text-muted">Cross-domain few-shot graph learning, graph-level anomaly detection, molecular property prediction, and disentangled representation learning.</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h6>Trustworthy LLM Systems</h6>
+                                <p class="small mb-0 text-muted">Evidence-grounded QA, security log reasoning, attack-chain reconstruction, and auditable context compression.</p>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <h6>Retrieval and Recommendation</h6>
+                                <p class="small mb-0 text-muted">Multimodal sequential recommendation, vector retrieval alignment, and evaluation protocols for retrieval-augmented systems.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Evaluation and Reproducibility</h6>
+                                <p class="small mb-0 text-muted">PyTorch, PyG, Transformers, vLLM, baselines, ablations, and stable training / inference pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-code-branch"></i> Selected Projects</h5>
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>Tencent Ads Recommendation Competition.</strong> Multimodal sequential recommendation with Transformer sequence modeling, InfoNCE, hierarchical negative sampling, false-negative masking, and vector-retrieval score alignment.</li>
+                            <li class="mb-2"><strong>VeriSec-QA.</strong> Evidence-grounded cybersecurity teaching assistant with Task-DAG-aware QA and minimal auditable context for log compression.</li>
+                            <li><strong>ShuiMuHui Chat.</strong> Campus-domain agentic QA system integrating structured APIs for events, reviews, shops, and service-oriented interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+        %}
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,93 @@
+---
+layout: default
+title : 中文主页
+navbar_title: 中文
+permalink: /zh/
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+        <div class="row">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h4 class="mb-3">张程皓</h4>
+                        <p>
+                            我是清华大学软件学院软件工程硕士研究生，导师为赵曦滨老师。本科毕业于清华大学软件学院。
+                        </p>
+                        <p>
+                            我的研究兴趣包括图机器学习、大模型安全、推荐与检索系统，以及以评测为中心的机器学习工程。
+                            近期工作覆盖跨域 few-shot 图学习、证据绑定网络安全问答、多模态序列推荐和端到端向量检索对齐。
+                        </p>
+                        <p class="mb-0">
+                            目前开放交流 2026 年科研算法实习与秋招全职机会。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究兴趣</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h6>图表征学习</h6>
+                                <p class="small mb-0 text-muted">跨域 few-shot 图学习、图级异常检测、分子性质预测与解耦表征学习。</p>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h6>可信大模型系统</h6>
+                                <p class="small mb-0 text-muted">证据绑定问答、安全日志推理、攻击链复盘与可审计上下文压缩。</p>
+                            </div>
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <h6>推荐与检索</h6>
+                                <p class="small mb-0 text-muted">多模态序列推荐、向量检索对齐和面向真实系统的评测协议。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>评测与可复现性</h6>
+                                <p class="small mb-0 text-muted">PyTorch、PyG、Transformers、vLLM、基线复现、消融实验和稳定训练管线。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-scroll"></i> 代表论文</h5>
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>DGPA for Few-Shot Unsupervised Domain Adaptation in Graph-Level Anomaly Detection.</strong> AAAI 2026.</li>
+                            <li class="mb-2"><strong>Factor-wise Disentangled Contrastive Learning for Cross-domain Few-shot Molecular Property Prediction.</strong> Frontiers of Computer Science, 2025.</li>
+                            <li><strong>Geometry-Guided Domain Generalization for Monocular 3D Object Detection.</strong> AAAI 2024.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3"><i class="fas fa-code-branch"></i> 项目</h5>
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>腾讯广告推荐大赛。</strong> Transformer 序列建模、多模态编码、InfoNCE、分层负采样、假负屏蔽和向量检索打分对齐。</li>
+                            <li class="mb-2"><strong>VeriSec-QA。</strong> 证据绑定的网络安全课程智能助教，支持 Task-DAG 状态感知问答和最小可审计上下文。</li>
+                            <li><strong>水木汇 Chat。</strong> 校园垂直领域 Agent 问答系统，接入活动、点评、商铺等结构化 API。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include widgets/experience_card.html %}
+    </div>
+</div>
