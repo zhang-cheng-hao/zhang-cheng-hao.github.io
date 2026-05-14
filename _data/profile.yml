@@ -1,10 +1,16 @@
 primary_name: "Chenghao Zhang"
 secondary_name: "张程皓"
 navbar_name: "Chenghao Zhang"
+navbar_name_zh: "张程皓"
 
 positions:
 - name: M.S. Student, School of Software
 - name: Tsinghua University
+  logo: /assets/images/badges/THU.png
+
+positions_zh:
+- name: 软件工程硕士研究生，软件学院
+- name: 清华大学
   logo: /assets/images/badges/THU.png
 
 email: "chenghao24@mails.tsinghua.edu.cn"
@@ -44,11 +50,30 @@ education:
   position: B.Eng. in Software Engineering, GPA 3.857 / 4.0, Rank 13 / 93
   date: Sep. 2020 - Jun. 2024
 
+education_zh:
+- name: 清华大学
+  logo: /assets/images/badges/THU.png
+  dept: 软件学院
+  position: 软件工程硕士
+  date: 2024年8月 - 至今
+- name: 清华大学
+  logo: /assets/images/badges/THU.png
+  dept: 软件学院
+  position: 软件工程学士，GPA 3.857 / 4.0，排名 13 / 93
+  date: 2020年9月 - 2024年6月
+
 experience:
 - name: Tsinghua University
   logo: /assets/images/badges/THU.png
   dept: Graduate Student Association
   position: Lead, Information Service Center
+  date: 2024 - 2025
+
+experience_zh:
+- name: 清华大学
+  logo: /assets/images/badges/THU.png
+  dept: 研究生会
+  position: 信息服务中心负责人
   date: 2024 - 2025
 
 awards:
@@ -61,4 +86,16 @@ awards:
 - name: Academic Excellence Scholarship
   date: 2021-2022
 - name: Tsinghua Challenge Cup, Third Prize
+  date: 2023
+
+awards_zh:
+- name: 清华大学优秀学生干部
+  date: 2025
+- name: 综合优秀奖学金
+  date: 2024-2025
+- name: 科技创新奖学金
+  date: 2023
+- name: 学业优秀奖学金
+  date: 2021-2022
+- name: 清华大学挑战杯三等奖
   date: 2023

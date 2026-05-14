@@ -1,14 +1,36 @@
+{% assign card_lang = include.lang | default: page.lang | default: "en" %}
+{% assign education = site.data.profile.education %}
+{% assign experience = site.data.profile.experience %}
+{% assign awards = site.data.profile.awards %}
+{% assign education_title = "Education" %}
+{% assign experience_title = "Experience" %}
+{% assign awards_title = "Honors & Awards" %}
+{% if card_lang == "zh" %}
+    {% if site.data.profile.education_zh %}
+        {% assign education = site.data.profile.education_zh %}
+    {% endif %}
+    {% if site.data.profile.experience_zh %}
+        {% assign experience = site.data.profile.experience_zh %}
+    {% endif %}
+    {% if site.data.profile.awards_zh %}
+        {% assign awards = site.data.profile.awards_zh %}
+    {% endif %}
+    {% assign education_title = "教育经历" %}
+    {% assign experience_title = "经历" %}
+    {% assign awards_title = "荣誉与奖项" %}
+{% endif %}
+
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
-                    {% if site.data.profile.education %}
+                    {% if education %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Education</h6>
+                            <h6>{{ education_title }}</h6>
                             <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.education %}
+                                {% for item in education %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
@@ -26,12 +48,12 @@
                     </div>
                     {% endif %}
 
-                    {% if site.data.profile.experience %}
+                    {% if experience %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Experience</h6>
+                            <h6>{{ experience_title }}</h6>
                             <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
+                                {% for item in experience %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
@@ -49,12 +71,12 @@
                     </div>
                     {% endif %}
 
-                    {% if site.data.profile.awards %}
+                    {% if awards %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
+                            <h6>{{ awards_title }}</h6>
                             <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
+                                {% for item in awards %}
                                 <li>
                                     <div class="d-flex">
                                         <div>{{ item.name }}</div>

@@ -1,7 +1,8 @@
 pages:
 - name: Home
+  name_zh: 首页
   url: /
+  url_zh: /zh/
 - name: Publications
+  name_zh: 论文
   url: /publications
-- name: 中文
-  url: /zh

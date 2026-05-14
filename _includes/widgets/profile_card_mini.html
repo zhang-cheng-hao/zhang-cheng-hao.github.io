@@ -1,3 +1,15 @@
+{% assign card_lang = include.lang | default: page.lang | default: "en" %}
+{% assign profile_name = site.data.profile.primary_name %}
+{% assign profile_subname = site.data.profile.secondary_name %}
+{% assign positions = site.data.profile.positions %}
+{% if card_lang == "zh" %}
+    {% assign profile_name = site.data.profile.secondary_name | default: site.data.profile.primary_name %}
+    {% assign profile_subname = site.data.profile.primary_name %}
+    {% if site.data.profile.positions_zh %}
+        {% assign positions = site.data.profile.positions_zh %}
+    {% endif %}
+{% endif %}
+
 <div class="row sticky-top" style="top: 80px">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
@@ -22,13 +34,20 @@
                 </div>
                 <div class="row">
                     <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                        {{ profile_name }}
                     </div>
                 </div>
+                {% if profile_subname %}
+                <div class="row small">
+                    <div class="col text-center text-muted">
+                        {{ profile_subname }}
+                    </div>
+                </div>
+                {% endif %}
 
                 <div class="row small">
                     <div class="col text-center">
-                        {% for position in site.data.profile.positions %}
+                        {% for position in positions %}
                         {{ position.name }}<br/>
                         {% endfor %}
                     </div>
