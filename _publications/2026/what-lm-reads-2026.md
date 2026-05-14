@@ -2,6 +2,7 @@
 title: "What the Language Model Reads Shapes What the Retriever Learns"
 date: 2026-05-14 00:01:00 +0800
 selected: true
+cover: /assets/images/covers/what-lm-reads-2026.jpg
 pub: "Manuscript under review"
 pub_date: "2026"
 abstract: >-
@@ -9,6 +10,4 @@ abstract: >-
 authors:
 - C. Zhang
 - et al.
-links:
-  Details: /publications
 ---

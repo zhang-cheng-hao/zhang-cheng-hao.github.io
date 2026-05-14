@@ -65,6 +65,27 @@ h1, h2, h3, h4, h5, h6,
     max-height: 120px;
 }
 
+.publication-cover {
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid #eef1f4;
+}
+
+.publication-cover-link {
+    display: block;
+}
+
+.publication-cover-link:hover .publication-cover {
+    opacity: 0.92;
+}
+
+.publication-title-link:hover {
+    color: #0056b3 !important;
+    text-decoration: none;
+}
+
 .abstract-body {
     min-height: 100px;
 }
