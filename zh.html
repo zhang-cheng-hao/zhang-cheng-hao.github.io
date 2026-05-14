@@ -17,15 +17,19 @@ permalink: /zh/
                     <div class="card-body p-4">
                         <h4 class="mb-3">张程皓</h4>
                         <p>
-                            我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业。本科毕业于清华大学软件学院。
+                            我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业，本科同样就读于清华大学软件学院。
+                            目前在快手基础大模型与应用部做大模型算法实习，主要负责面向短视频推荐的 LLM item embedding
+                            与对齐训练链路。
                         </p>
                         <p>
-                            我的研究主线是 LLM-supervised retrieval learning：研究语言模型和视觉语言模型如何通过它们读取、
-                            使用的证据来监督检索器学习，而不只依赖显式 relevance labels 或短 passage matching。
-                            近期工作关注 reading policy、evidence exposure、无检索标签的多模态检索学习，以及 LLM-enhanced recommendation。
+                            我的工作围绕 <strong>表征学习、检索学习与 LLM-enhanced recommendation</strong> 展开：
+                            一方面研究语言模型和视觉语言模型如何通过可见证据、reading policy 与 evidence exposure
+                            监督 dense retriever；另一方面将大模型语义能力用于推荐场景中的多类型 item 表征和长期兴趣建模。
                         </p>
                         <p class="mb-0">
-                            目前关注大模型算法实习与 2027 届秋招机会。
+                            目前已有 AAAI 2026、AAAI 2024 与 Frontiers of Computer Science 论文经历；
+                            曾获清华大学优秀学生干部、综合优秀奖学金、科技创新奖学金与清华大学“挑战杯”三等奖。
+                            正在关注大模型算法与推荐算法方向的 2027 届机会。
                         </p>
                     </div>
                 </div>
@@ -33,22 +37,6 @@ permalink: /zh/
         </div>
 
         {% include widgets/experience_card.html %}
-
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> 论文与手稿'
-        %}
-        {% endif %}
 
         <div class="row mt-3">
             <div class="col">
@@ -80,6 +68,7 @@ permalink: /zh/
                                 <li>
                                     <strong>实验结果：</strong>在该 LLM item embedding 特征接入后的实验中，离线 AUC 提升
                                     <strong>0.45pp</strong>，核心业务指标提升 <strong>1.88%</strong>。
+                                    项目入选社区科学线优秀案例公示。
                                 </li>
                             </ul>
                         </div>
@@ -87,6 +76,22 @@ permalink: /zh/
                 </div>
             </div>
         </div>
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> 论文与手稿'
+        %}
+        {% endif %}
 
         <div class="row mt-3">
             <div class="col">
