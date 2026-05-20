@@ -3,7 +3,6 @@ title: "CSGR: Compressed Source Gradient Replay for Scalable Self-Supervised Ret
 date: 2026-05-14 00:03:00 +0800
 selected: true
 cover: /assets/images/covers/csgr-emnlp-2026.png
-primary_url: /assets/papers/csgr-emnlp-2026.pdf
 pub: "Manuscript under review"
 pub_date: "2026"
 abstract: >-
@@ -11,6 +10,4 @@ abstract: >-
 authors:
 - C. Zhang
 - et al.
-links:
-  PDF: /assets/papers/csgr-emnlp-2026.pdf
 ---
