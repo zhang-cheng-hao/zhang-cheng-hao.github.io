@@ -44,6 +44,12 @@ Open the local URL printed by Jekyll.
 - `_news/`: homepage news entries.
 - `index.html`: English homepage.
 - `zh.html`: Chinese homepage.
+- `docs/`: curated public notes distilled from local preparation material.
+
+## Curated Notes
+
+- `docs/interview-prep-handbook.md`: structured interview-preparation handbook distilled from historical local notes and chat-generated material.
+- `docs/source-material-map.md`: map of local source material and what is intentionally not committed.
 
 ## Template Credit
 
