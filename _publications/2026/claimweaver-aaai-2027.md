@@ -2,7 +2,7 @@
 title: "ClaimWeaver: Query-Conditioned Evidence Organization for Multi-Hop Retrieval-Augmented Generation"
 date: 2026-08-22 00:01:00 +0800
 selected: true
-cover: /assets/images/empty_300x200.png
+cover: /assets/images/covers/claimweaver-aaai-2027.png
 pub: "AAAI Conference on Artificial Intelligence (AAAI), under review"
 pub_date: "2027"
 pub_last: "(co-first author)"

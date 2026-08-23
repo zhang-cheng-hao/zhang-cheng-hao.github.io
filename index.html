@@ -17,6 +17,8 @@ lang: en
             {% include widgets/experience_card.html %}
         {% endif %}
 
+        {% include widgets/internship_card.html %}
+
         {% if site.data.display.homepage.show_news %}
         {% assign count_news = site.news | size %}
         {% if count_news > 0 %}

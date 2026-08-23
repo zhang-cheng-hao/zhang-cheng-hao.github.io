@@ -66,6 +66,56 @@ education_zh:
   position: 软件工程学士
   date: 2020年9月 - 2024年6月
 
+internships:
+- company: Alibaba | Qwen
+  role: LLM Algorithm Intern
+  date: Jun. 2026 - Aug. 2026
+  highlights:
+  - title: "Long-horizon Agentic RAG for complex knowledge questions:"
+    text: >-
+      Addressed fragmented criteria and misleading evidence in single-pass RAG. Responsible for POC validation and solution development; redesigned the pipeline as an agent that autonomously searches, verifies evidence, and stops, and designed a Source-Aware Agent Loop for tool calls, evidence conflicts, and stopping. On Qwen3.6-35B-A3B, accuracy improved from 85.23% to 89.26% (+4.03pp).
+  - title: "Agent post-training, evaluation, and continuous iteration:"
+    text: >-
+      Diagnosed tool-behavior collapse caused by direct RL and restored tool use with SFT on teacher trajectories. For sparse GRPO signals, built a loop of closed-book screening, multi-angle rollout stratification, failure attribution, and question synthesis, with continuous evaluation across correctness, tool behavior, latency, and bad cases. Final accuracy reached 91.95%, while agent latency decreased from 19.49s to 12.23s.
+  - title: "Heterogeneous RL training and Agent Runtime infrastructure:"
+    text: >-
+      Modified the verl fully-async pipeline for the different workloads of policy updates and rollouts, with L20X/H20 device pools and direct NCCL weight transfer. On 32 GPUs (2+2 nodes), average step time decreased from 280s to 116s, improving throughput by 2.41×.
+- company: Kuaishou | Foundation Models & Applications
+  role: LLM Algorithm Intern
+  date: Jan. 2026 - Jun. 2026
+  highlights:
+  - title: "Multimodal recommendation representations (CREM; Excellent Launch Review):"
+    text: >-
+      Upgraded the CREM backbone from Qwen2.5-VL-3B to Qwen2.5-Omni-3B and added audio for livestream scenarios. Generated tens of millions of LLM relevance soft labels and combined popularity-aware negative sampling, in-batch hard-negative mining, InfoNCE, and multimodal QA co-training for recommendation-domain alignment. Responsible for the data pipeline, distributed training and inference, and delivery of the online embedding service; achieved +0.45pp offline AUC and +1.883% on the posterior expected-spend metric.
+  - title: "Unified generative recommendation and user modeling (UBioRec):"
+    text: >-
+      Built 600K triplets for multi-task SFT on Qwen2.5-7B. Used an Adaptive Token Scheme and shared-prefix KV cache to unify item prediction and user-profile generation, accelerating profile inference by 6.5×; achieved NDCG=0.2098 in 10K-scale retrieval, +2.29% local-life GMV, and +0.91% watch time in zero-shot transfer to the following feed.
+
+internships_zh:
+- company: 阿里巴巴｜千问事业部
+  role: 大模型算法实习生
+  date: 2026.06 - 2026.08
+  highlights:
+  - title: "复杂知识题的长耗时 Agentic RAG："
+    text: >-
+      面向单次 RAG 难以覆盖分散判据、错误证据易带偏推理的问题，负责长耗时解题 Agent 的 POC 验证与方案开发；将单轮生成重构为可自主检索、核验证据并主动停止的 Agent，设计 Source-Aware Agent Loop 管理工具调用、证据冲突与停止策略。在 Qwen3.6-35B-A3B 上，准确率由 85.23% 提升至 89.26%（+4.03pp）。
+  - title: "Agent 后训练、评测与持续迭代："
+    text: >-
+      定位直接 RL 引发的工具行为塌缩，以教师正确轨迹 SFT 恢复工具使用；针对 GRPO 信号稀疏，搭建“盲答筛题—多角度 Rollout 分层—失败归因与题目合成”闭环，并按正确性、工具行为、时延与 Bad Case 持续评测迭代。最终解题准确率达到 91.95%，Agent 时延由 19.49s 降至 12.23s。
+  - title: "异构 RL 训练与 Agent Runtime 基建："
+    text: >-
+      针对策略更新与 Rollout 的负载差异，改造 verl fully-async 链路，实现 L20X/H20 按卡型分池调度与 NCCL 权重直传；32 卡（2+2 节点）下平均单步耗时由 280s 降至 116s，吞吐提升 2.41×。
+- company: 快手｜基础大模型与应用部
+  role: 大模型算法实习生
+  date: 2026.01 - 2026.06
+  highlights:
+  - title: "多模态推荐表征：领域适配与语义对齐（CREM，优秀 Launch Review）："
+    text: >-
+      将 CREM backbone 从 Qwen2.5-VL-3B 升级至 Qwen2.5-Omni-3B，引入音频覆盖直播场景；以 LLM 生成千万级相关性软标签，结合高热负采样、in-batch hard negative mining、InfoNCE 与多模态 QA 联训完成推荐域对齐。负责数据 pipeline、分布式训练推理及线上 embedding 服务交付，实现离线 AUC +0.45pp，内循环大盘后验预期花费 +1.883%。
+  - title: "生成式推荐大模型：物品预测与用户画像统一建模（UBioRec）："
+    text: >-
+      基于 Qwen2.5-7B 构造 60 万组三元组进行多任务 SFT，以 Adaptive Token Scheme 和共享前缀 KV cache 统一 item 预测与用户画像生成；画像推理加速 6.5×，万级检索 NDCG=0.2098，线上本地生活 GMV +2.29%、关注页零样本迁移时长 +0.91%。
+
 experience:
 - name: Tsinghua University
   logo: /assets/images/badges/THU.png
