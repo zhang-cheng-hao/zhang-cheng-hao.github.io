@@ -24,18 +24,29 @@ short_bio: >-
     Engineering from Tsinghua University.
   </p>
   <p>
-    My interests center on LLM-driven representation learning: how to use the
-    semantic understanding and world knowledge of LLMs/VLMs to learn
-    transferable, compressible user/item embeddings for retrieval and
-    recommendation.
+    I am seeking LLM Algorithm Engineer roles in FinTech. My research focuses
+    on <strong>LLM post-training and retrieval augmentation</strong>, including
+    Agentic RAG, SFT/GRPO, evaluation and bad-case iteration, and distributed
+    training and runtime optimization.
+  </p>
+  <p class="mb-0">
+    During internships at Alibaba Qwen and Kuaishou, I worked on long-horizon
+    Agentic RAG, LLM post-training, multimodal recommendation representations,
+    and generative recommendation, with an emphasis on building accurate,
+    reliable, and efficient LLM systems.
+  </p>
+
+short_bio_zh: >-
+  <p>
+    我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业，本科同样就读于清华大学软件学院。
   </p>
   <p>
-    I am particularly interested in representation alignment under weak or
-    implicit supervision, and in jointly training embeddings with contrastive
-    objectives and SFT/generative objectives so that they retain semantic
-    knowledge while absorbing collaborative signals from retrieval and
-    recommendation. My earlier work also studies disentangled representation
-    learning and cross-domain generalization for graph and molecular tasks.
+    求职方向为<strong>大模型算法工程师（金融科技）</strong>，研究方向为<strong>大模型后训练与检索增强</strong>，
+    主要实践包括 Agentic RAG、SFT/GRPO、评测与 Bad Case 闭环，以及分布式训练和 Runtime 优化。
+  </p>
+  <p class="mb-0">
+    曾在阿里巴巴千问事业部和快手基础大模型与应用部实习，开展长耗时 Agentic RAG、大模型后训练、
+    多模态推荐表征与生成式推荐相关工作，关注大模型系统的准确性、可靠性与运行效率。
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg

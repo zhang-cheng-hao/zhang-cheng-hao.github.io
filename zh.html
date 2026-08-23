@@ -16,18 +16,7 @@ permalink: /zh/
                 <div class="card border-0 shadow-sm bg-white">
                     <div class="card-body p-4">
                         <h4 class="mb-3">张程皓</h4>
-                        <p>
-                            我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业，本科同样就读于清华大学软件学院。
-                        </p>
-                        <p>
-                            我的兴趣集中在<strong>大模型驱动的 representation learning</strong>：
-                            如何利用 LLM/VLM 的语义理解与世界知识，学习可迁移、可压缩、可用于检索与推荐的 user/item embeddings。
-                        </p>
-                        <p class="mb-0">
-                            我关注弱监督/无显式标注场景下的表征对齐，以及对比学习与 SFT/生成式目标的联合训练，
-                            使 embedding 同时保留语义知识并吸收推荐/检索中的协同信号。
-                            早期工作也涉及图与分子任务中的解纠缠表征学习和跨域泛化。
-                        </p>
+                        {{ site.data.profile.short_bio_zh }}
                     </div>
                 </div>
             </div>
@@ -60,20 +49,20 @@ permalink: /zh/
 	                        <h5 class="mb-3"><i class="fas fa-microscope"></i> 研究主线</h5>
 	                        <div class="row">
 	                            <div class="col-md-6 mb-3">
-	                                <h6>LLM/VLM Embeddings</h6>
-	                                <p class="small mb-0 text-muted">学习可迁移、可压缩的 user/item embeddings，使大模型语义知识能进入检索、推荐和用户理解任务。</p>
+	                                <h6>Agentic RAG</h6>
+	                                <p class="small mb-0 text-muted">面向复杂知识任务构建可自主检索、核验证据、处理冲突并主动停止的长程 Agent。</p>
 	                            </div>
 	                            <div class="col-md-6 mb-3">
-	                                <h6>弱监督表征对齐</h6>
-	                                <p class="small mb-0 text-muted">在缺少显式 relevance labels 的场景下，利用 LLM/VLM 证据阅读、问答效用和行为派生信号监督 embedding 学习。</p>
+	                                <h6>大模型后训练</h6>
+	                                <p class="small mb-0 text-muted">围绕 SFT/GRPO、轨迹构造、奖励设计、评测与 Bad Case 闭环，优化模型能力与工具行为。</p>
 	                            </div>
 	                            <div class="col-md-6 mb-3 mb-md-0">
-	                                <h6>语义与协同信号融合</h6>
-	                                <p class="small mb-0 text-muted">通过对比学习与 SFT/生成式目标联合训练，使 embedding 既保留世界知识，也贴近推荐/检索中的协同分布。</p>
+	                                <h6>检索与推荐</h6>
+	                                <p class="small mb-0 text-muted">通过对比学习与多任务目标，学习多模态推荐表征和生成式 user/item 模型。</p>
 	                            </div>
 	                            <div class="col-md-6">
-	                                <h6>解纠缠与跨域泛化</h6>
-	                                <p class="small mb-0 text-muted">研究图、分子和多域任务中的因素级解纠缠表示、跨域迁移和长尾/冷启动泛化能力。</p>
+	                                <h6>训练与 Runtime 优化</h6>
+	                                <p class="small mb-0 text-muted">优化分布式训练、异步 RL、Rollout 服务、时延与吞吐，提升大模型研发效率。</p>
 	                            </div>
 	                        </div>
                     </div>
