@@ -26,7 +26,7 @@ short_bio: >-
   <p>
     My research and engineering work focuses on <strong>LLM post-training and
     retrieval augmentation</strong>, including Agentic RAG, SFT/GRPO, model
-    evaluation and error analysis, and distributed training and runtime
+    evaluation and error analysis, and distributed training-system
     optimization.
   </p>
   <p class="mb-0">
@@ -42,7 +42,7 @@ short_bio_zh: >-
   </p>
   <p>
     我的研究与工程实践聚焦<strong>大模型后训练与检索增强</strong>，主要包括 Agentic RAG、SFT/GRPO、
-    大模型评测与误差分析，以及分布式训练和 Runtime 优化。
+    大模型评测与误差分析，以及分布式训练系统优化。
   </p>
   <p class="mb-0">
     曾在阿里巴巴千问事业部和快手基础大模型与应用部实习，开展长耗时 Agentic RAG、大模型后训练、
@@ -88,7 +88,7 @@ internships:
   - title: "Agent post-training, evaluation, and continuous iteration:"
     text: >-
       Diagnosed tool-behavior collapse caused by direct RL and restored tool use with SFT on teacher trajectories. For sparse GRPO signals, built a loop of closed-book screening, multi-angle rollout stratification, failure attribution, and question synthesis, with continuous evaluation across correctness, tool behavior, latency, and bad cases. Final accuracy reached 91.95%, while agent latency decreased from 19.49s to 12.23s.
-  - title: "Heterogeneous RL training and Agent Runtime infrastructure:"
+  - title: "Heterogeneous RL training optimization:"
     text: >-
       Modified the verl fully-async pipeline for the different workloads of policy updates and rollouts, with L20X/H20 device pools and direct NCCL weight transfer. On 32 GPUs (2+2 nodes), average step time decreased from 280s to 116s, improving throughput by 2.41×.
 - company: Kuaishou | Foundation Models & Applications
@@ -113,7 +113,7 @@ internships_zh:
   - title: "Agent 后训练、评测与持续迭代："
     text: >-
       定位直接 RL 引发的工具行为塌缩，以教师正确轨迹 SFT 恢复工具使用；针对 GRPO 信号稀疏，搭建“盲答筛题—多角度 Rollout 分层—失败归因与题目合成”闭环，并按正确性、工具行为、时延与 Bad Case 持续评测迭代。最终解题准确率达到 91.95%，Agent 时延由 19.49s 降至 12.23s。
-  - title: "异构 RL 训练与 Agent Runtime 基建："
+  - title: "异构 RL 训练系统优化："
     text: >-
       针对策略更新与 Rollout 的负载差异，改造 verl fully-async 链路，实现 L20X/H20 按卡型分池调度与 NCCL 权重直传；32 卡（2+2 节点）下平均单步耗时由 280s 降至 116s，吞吐提升 2.41×。
 - company: 快手｜基础大模型与应用部
