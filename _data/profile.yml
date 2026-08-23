@@ -24,10 +24,10 @@ short_bio: >-
     Engineering from Tsinghua University.
   </p>
   <p>
-    I am seeking LLM Algorithm Engineer roles in FinTech. My research focuses
-    on <strong>LLM post-training and retrieval augmentation</strong>, including
-    Agentic RAG, SFT/GRPO, evaluation and bad-case iteration, and distributed
-    training and runtime optimization.
+    My research and engineering work focuses on <strong>LLM post-training and
+    retrieval augmentation</strong>, including Agentic RAG, SFT/GRPO,
+    evaluation and bad-case iteration, and distributed training and runtime
+    optimization.
   </p>
   <p class="mb-0">
     During internships at Alibaba Qwen and Kuaishou, I worked on long-horizon
@@ -41,8 +41,8 @@ short_bio_zh: >-
     我是清华大学软件学院软件工程硕士研究生，预计 2027 年毕业，本科同样就读于清华大学软件学院。
   </p>
   <p>
-    求职方向为<strong>大模型算法工程师（金融科技）</strong>，研究方向为<strong>大模型后训练与检索增强</strong>，
-    主要实践包括 Agentic RAG、SFT/GRPO、评测与 Bad Case 闭环，以及分布式训练和 Runtime 优化。
+    我的研究与工程实践聚焦<strong>大模型后训练与检索增强</strong>，主要包括 Agentic RAG、SFT/GRPO、
+    评测与 Bad Case 闭环，以及分布式训练和 Runtime 优化。
   </p>
   <p class="mb-0">
     曾在阿里巴巴千问事业部和快手基础大模型与应用部实习，开展长耗时 Agentic RAG、大模型后训练、
